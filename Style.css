@@ -36,7 +36,7 @@ header{
     box-shadow: 0 .2rem 1rem var(--grey);
 }
 header .Nav-bar a{
-    font-size: 16px;
+    font-size: 19px;
     font-weight:500;
     padding: 0 10px;
     color: var(--black);
@@ -79,5 +79,14 @@ header #Menu-bar:hover
         display: initial;
         padding-right: 3rem;
         font-size: 1.5rem;
+    }
+}
+@media only screen and (min-width:600px) and (max-width:991px){
+    header{
+        justify-content: center;
+    }
+    header .Nav-bar a{
+        font-size: 18px;
+        padding: 0 1rem;
     }
 }
