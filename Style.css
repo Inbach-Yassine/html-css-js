@@ -4,7 +4,7 @@
     --white:#ffffff;
     --grey:#BDB7B1;
     --blue:#036;
-    --orange:##FF6464;
+    --orange:#FF6464;
 }
 *::selection{
     color:var(--white);
@@ -50,8 +50,48 @@ header #Menu-bar:hover
     color: var(--grey);
     overflow: hidden;
     transition: .2s linear;
-
 }
+.position{
+    padding: 0 7rem;
+}
+section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 0;
+}
+section .Creative-Technologist h1{
+    font-weight: 700;
+    color: var(--black);
+    font-size: 2.3rem;
+}
+section .Creative-Technologist p{
+    font-size: 15px;
+    padding-top: 1rem;
+    font-weight: 400;
+    max-width: 420px;
+    line-height: 23px;
+    color:  #21243D;
+}
+section .Creative-Technologist .btn{
+    padding-top: 1.5rem;
+}
+section .Creative-Technologist .btn button,
+section .Creative-Technologist .btn button a{
+    padding: 10px 1rem;
+    background: var(--orange);
+    color: var(--white);
+    font-weight: 500;
+    font-size: 1rem;
+    border-radius: 1.5rem;
+}
+section img{
+    object-fit: fill;
+    width: 240px;
+    height: 240px;
+    margin-top: 3rem;
+}
+
 @media only screen and (max-width:600px){
     header{
         padding:1rem 0;
@@ -80,6 +120,29 @@ header #Menu-bar:hover
         padding-right: 3rem;
         font-size: 1.5rem;
     }
+    .position {
+        padding: 0px 3rem;
+    }
+    section {
+        row-gap: 2rem;
+        padding: 0rem 0;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    section .Creative-Technologist h1 {
+        font-size: 1.8rem;
+    }
+    section .Creative-Technologist p {
+        font-size: 13px;
+        max-width: max-content;
+    }
+    section .Creative-Technologist .btn {
+        padding-top: 1rem;
+    }
+    section .Creative-Technologist .btn button, section .Creative-Technologist .btn button a {
+        padding: 10px 13px;
+        font-size: 14px;
+    }
 }
 @media only screen and (min-width:600px) and (max-width:991px){
     header{
@@ -89,4 +152,24 @@ header #Menu-bar:hover
         font-size: 18px;
         padding: 0 1rem;
     }
+    .position {
+        padding: 0 3rem;
+    }
+    section .Creative-Technologist h1 {
+        font-size: 2rem;
+    }
+    section .Creative-Technologist p {
+        font-size: 14px;
+    }
+    section img {
+        margin-top: 0rem;
+    }
+    section .Creative-Technologist .btn button, section .Creative-Technologist .btn button a {
+        padding: 8px 10px;
+        font-size: 15px;
+    }
+    section .Creative-Technologist .btn {
+        padding-top: 1rem;
+    }
+    
 }
