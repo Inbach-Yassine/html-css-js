@@ -3,7 +3,7 @@
     --black:#000000;
     --white:#ffffff;
     --grey:#BDB7B1;
-    --blue:#036;
+    --blue:#00A8CC;
     --orange:#FF6464;
 }
 *::selection{
@@ -51,21 +51,21 @@ header #Menu-bar:hover
     overflow: hidden;
     transition: .2s linear;
 }
-.position{
+section{
     padding: 0 7rem;
 }
-section{
+.Creative{
+    padding: 4rem 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 4rem 0;
 }
-section .Creative-Technologist h1{
+.Creative .Creative-Technologist h1{
     font-weight: 700;
     color: var(--black);
     font-size: 2.3rem;
 }
-section .Creative-Technologist p{
+.Creative .Creative-Technologist p{
     font-size: 15px;
     padding-top: 1rem;
     font-weight: 400;
@@ -73,24 +73,78 @@ section .Creative-Technologist p{
     line-height: 23px;
     color:  #21243D;
 }
-section .Creative-Technologist .btn{
+.Creative .Creative-Technologist .btn{
     padding-top: 1.5rem;
 }
-section .Creative-Technologist .btn button,
-section .Creative-Technologist .btn button a{
+.Creative .Creative-Technologist .btn button,
+.Creative .Creative-Technologist .btn button a{
     padding: 10px 1rem;
     background: var(--orange);
     color: var(--white);
     font-weight: 500;
-    font-size: 1rem;
     border-radius: 1.5rem;
 }
-section img{
+.Creative img{
     object-fit: fill;
     width: 240px;
     height: 240px;
     margin-top: 3rem;
 }
+.back-ground{
+    background:  #EDF7FA;
+    padding: 2rem 0;
+}
+.Recent-posts{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Recent-posts h2,
+.Recent-posts h4{
+    font-weight: 400;
+}
+.Recent-posts h4{
+    color: var(--blue);
+}
+.card{
+    display: flex;
+    justify-content:space-around;
+    column-gap: 3rem;
+    padding-top: 2rem;
+}
+.card .card-1,
+.card .card-2{
+    box-shadow: 0 .2rem 1rem var(--white);
+    padding:2rem;
+    background: var(--white);
+    border-radius: 1rem;
+}
+.card .card-1 h2,
+.card .card-2 h2
+{
+    max-width: 350px;
+    padding-bottom: 10px;
+}
+.card .card-1 .para,
+.card .card-1 .para p,
+.card .card-2 .para,
+.card .card-2 .para p {
+    display: flex;
+    column-gap: 1rem;
+    font-size: 15px;
+    font-weight: 400;
+    color: #21243D;
+}
+.card .card-1 p,
+.card .card-2 p{
+    font-weight: 400;
+    font-family: 13px;
+    max-width: 350px;
+    line-height: 24px;
+    color: #21243D;
+    padding-top: 14px;
+}
+
 
 @media only screen and (max-width:600px){
     header{
@@ -120,29 +174,94 @@ section img{
         padding-right: 3rem;
         font-size: 1.5rem;
     }
-    .position {
-        padding: 0px 3rem;
+    section{
+        padding: 0 3rem;
     }
-    section {
-        row-gap: 2rem;
+    .Creative {
         padding: 0rem 0;
         flex-direction: column-reverse;
         text-align: center;
+        row-gap: 2rem;
     }
-    section .Creative-Technologist h1 {
+    .Creative .Creative-Technologist h1 {
         font-size: 1.8rem;
     }
-    section .Creative-Technologist p {
+    .Creative .Creative-Technologist p {
         font-size: 13px;
         max-width: max-content;
     }
-    section .Creative-Technologist .btn {
+    .Creative .Creative-Technologist .btn {
         padding-top: 1rem;
     }
-    section .Creative-Technologist .btn button, section .Creative-Technologist .btn button a {
+    .Creative .Creative-Technologist .btn button, section .Creative-Technologist .btn button a {
         padding: 10px 13px;
         font-size: 14px;
     }
+    .back-ground {
+        margin-top: 3rem;
+    }
+    .Recent-posts {
+        flex-direction: column;
+    }
+    .Recent-posts h2 {
+        font-size: 1.5rem;
+    }
+    .Recent-posts h4 {
+        display: none;
+    }
+    .card {
+        padding-top: 1.5rem;
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+    .card .card-1 h2, .card .card-2 h2 {
+        max-width: max-content;
+        padding-bottom: 0px;
+        font-size: 1.4rem;
+    }
+    .card .card-1 .para, .card .card-1 .para p, .card .card-2 .para, .card .card-2 .para p {
+        font-size: 13px;
+    }
+    .card .card-1 p, .card .card-2 p {
+        font-family: 11px;
+        line-height: 23px;
+        max-width: max-content;
+    }
+}
+@media only screen and (max-width:300px){
+    .Creative img {
+        width: 180px;
+        height: 180px;
+        margin-top: 0;
+    }
+    .Creative .Creative-Technologist h1 {
+        font-size: 1rem;
+    }
+    .Creative .Creative-Technologist p {
+        font-size: 11px;
+    }
+    .Creative .Creative-Technologist .btn button a {
+        padding: 9px;
+        font-size: 12px;
+    }
+    .Recent-posts h2 {
+        font-size: 1rem;
+    }
+    .card .card-1 .para, .card .card-1 .para p ,
+     .card .card-2 .para, .card .card-2 .para p {
+        font-size: 8px;
+        column-gap: 9px;
+    }
+    .card .card-1 h2, 
+    .card .card-2 h2 {
+        font-size: 12px;
+    }
+}
+.card .card-1 p, .card .card-2 p {
+    font-family: 13px;
+    max-width: none;
+    line-height: 22px;
+    padding-top: 6px;
 }
 @media only screen and (min-width:600px) and (max-width:991px){
     header{
@@ -152,24 +271,27 @@ section img{
         font-size: 18px;
         padding: 0 1rem;
     }
-    .position {
+    section{
         padding: 0 3rem;
     }
-    section .Creative-Technologist h1 {
+    .Creative .Creative-Technologist h1 {
         font-size: 2rem;
     }
-    section .Creative-Technologist p {
+    .Creative .Creative-Technologist p {
         font-size: 14px;
     }
-    section img {
+    .Creative img {
         margin-top: 0rem;
     }
-    section .Creative-Technologist .btn button, section .Creative-Technologist .btn button a {
+    .Creative .Creative-Technologist .btn button, section .Creative-Technologist .btn button a {
         padding: 8px 10px;
         font-size: 15px;
     }
-    section .Creative-Technologist .btn {
+    .Creative .Creative-Technologist .btn {
         padding-top: 1rem;
     }
-    
+    .card .card-1 h2, .card .card-2 h2 {
+        max-width: max-content;
+        font-size: 1.5;
+    }
 }
