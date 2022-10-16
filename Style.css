@@ -299,8 +299,8 @@ footer li a:hover {
   }
   .card .card-1 p,
   .card .card-2 p {
-    font-family: 11px;
-    line-height: 23px;
+    font-size: 11px;
+    line-height: 18px;
     max-width: none;
   }
   .Featured-works h2 {
@@ -367,6 +367,8 @@ footer li a:hover {
 }
   .card .card-1 p, .card .card-2 p {
     max-width: none;
+    font-size:13px;
+line-height: 20px;
 }
   .Featured-works .parent .children .Groupe h1 {
     font-size: 1.5rem;
