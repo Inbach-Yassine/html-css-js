@@ -87,6 +87,9 @@ section {
   font-weight: 500;
   border-radius: 1.5rem;
 }
+.Creative .Creative-Technologist .btn button a:hover {
+  color: var(--black);
+}
 .Creative img {
   object-fit: fill;
   width: 240px;
@@ -151,6 +154,10 @@ section {
 }
 .Featured-works {
   padding-top: 3rem;
+}
+.Featured-works h1{
+  font-weight: 700;
+  font-size: 2rem;
 }
 .Featured-works .parent {
   padding: 1.5rem 0;
@@ -303,6 +310,9 @@ footer li a:hover {
     line-height: 18px;
     max-width: none;
   }
+  .Featured-works h1 {
+    font-size: 1.4rem;
+}
   .Featured-works h2 {
     text-align: center;
     font-size: 1.5rem;
@@ -318,10 +328,13 @@ footer li a:hover {
     width: 100%;
   }
   .Featured-works .parent .children .Groupe h1 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   .Featured-works .parent .children .Groupe .para {
     padding: 5px 0;
+  }
+  .Featured-works .parent .children .Groupe .para p:nth-child(1) {
+    padding: 0 8px;
   }
   .Featured-works .parent .children .Groupe p {
     max-width: max-content;
@@ -360,16 +373,20 @@ footer li a:hover {
     max-width: max-content;
     font-size: 1.5;
   }
-  .card .card-1 .para, .card .card-1 .para p, .card .card-2 .para, .card .card-2 .para p {
+  .card .card-1 .para,
+  .card .card-1 .para p,
+  .card .card-2 .para,
+  .card .card-2 .para p {
     display: block;
     max-width: max-content;
     line-height: 10px;
-}
-  .card .card-1 p, .card .card-2 p {
+  }
+  .card .card-1 p,
+  .card .card-2 p {
     max-width: none;
-    font-size:13px;
-line-height: 20px;
-}
+    font-size: 13px;
+    line-height: 20px;
+  }
   .Featured-works .parent .children .Groupe h1 {
     font-size: 1.5rem;
   }
