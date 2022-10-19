@@ -64,3 +64,18 @@
     width: initial;
   }
 }
+@media only screen and (min-width:600px) and (max-width:991px){
+  .blog .parent .children h2 {
+    font-size: 1.3rem;
+}
+  .blog .parent .children p {
+    font-size: 14px;
+    max-width: max-content;
+    padding-top: 7px;
+    line-height: 19px;
+}
+  .blog .parent .children {
+    width: initial;
+    padding-bottom: 1rem;
+}
+}
