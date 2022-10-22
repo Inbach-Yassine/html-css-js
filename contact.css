@@ -1,12 +1,83 @@
-.contact-us{
-    text-align: center;
-    border-radius: 5px;
-    background-color: #f2f2f2;
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&display=swap");
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --grey: #bdb7b1;
+  --blue: #00a8cc;
+  --orange: #ff6464;
 }
-.contact-us h1{
-    font-size: 700;
-    font-size: 2rem;
-    letter-spacing: 0.03em;
+*::selection {
+  color: var(--white);
+  background: var(--black);
 }
-  
-  
+body{
+    background: #e5e5e5;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+.contact-us {
+  font-family: "Heebo", sans-serif;
+  padding: 40px 0;
+}
+.contact-us h1 {
+  font-size: 700;
+  font-size: 2rem;
+  letter-spacing: 0.03em;
+}
+.contact-us .border{
+    border: 2px solid var(--blue);
+    width: 25%;
+    height: 6px;
+    background: var(--blue);
+    display: inline-block;
+    justify-content: center;
+}
+.contact-us form {
+padding-top: 1.5rem ;
+}
+.contact-us form input,
+.contact-us form textarea
+{
+    display: block;
+    width: 35%;
+    border-radius: 4px;
+    padding:10px 15px;
+    margin: 1rem 0;
+    border: 1px solid var(--grey);
+    resize: none;
+}
+.contact-us form input::placeholder,
+.contact-us form textarea::placeholder{
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--grey);
+}
+.contact-us form input[type = "text"],
+.contact-us form textarea {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--blue);
+}
+.contact-us form input:focus,
+.contact-us form textarea:focus{
+    border-color: var(--blue);
+}
+.contact-us form input[type = "submit"]{
+    width: 7%;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px;
+    background: var(--blue);
+    border: none;
+    color: var(--black);
+}
+.contact-us form input[type = "submit"]:hover{
+    background: var(--black);
+    color: var(--white);
+    cursor: pointer;
+}
