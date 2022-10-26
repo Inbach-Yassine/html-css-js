@@ -50,7 +50,7 @@ flex-direction: column;
 .contact-us form textarea
 {
     display: block;
-    width: 35%;
+    width: 60%;
     border-radius: 4px;
     padding:15px;
     margin: 10px 0;
@@ -86,4 +86,32 @@ flex-direction: column;
     background: var(--black);
     color: var(--white);
     cursor: pointer;
+}
+@media only screen and (max-width:600px){
+    .contact-us {
+        padding: 5rem 0;
+      }
+    .contact-us h1 {
+        font-size: 1.5rem;
+    }
+    .contact-us .border {
+        width: 46%;
+    }
+    .contact-us form input, .contact-us form textarea {
+        width: 70%;        
+    }
+    .contact-us form input[type = "submit"] {
+        width: 25%;
+    }
+}
+@media only screen and (min-width:600px) and (max-width:991px){
+    .contact-us {
+        padding: 5rem 0;
+      }
+      .contact-us form input, .contact-us form textarea {
+        width: 55%;
+    }
+      .contact-us form input[type = "submit"] {
+        width: 12%;
+    }
 }
