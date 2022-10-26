@@ -12,6 +12,8 @@
 }
 body{
     background: #e5e5e5;
+    max-width: 1280px;
+    width: 100%;
 }
 *{
     margin: 0;
@@ -23,6 +25,7 @@ body{
 .contact-us {
   font-family: "Heebo", sans-serif;
   padding: 40px 0;
+  text-align: center;
 }
 .contact-us h1 {
   font-size: 700;
@@ -35,10 +38,13 @@ body{
     height: 6px;
     background: var(--blue);
     display: inline-block;
-    justify-content: center;
 }
 .contact-us form {
 padding-top: 1.5rem ;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
 }
 .contact-us form input,
 .contact-us form textarea
@@ -46,8 +52,8 @@ padding-top: 1.5rem ;
     display: block;
     width: 35%;
     border-radius: 4px;
-    padding:10px 15px;
-    margin: 1rem 0;
+    padding:15px;
+    margin: 10px 0;
     border: 1px solid var(--grey);
     resize: none;
 }
